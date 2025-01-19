@@ -9,6 +9,10 @@ const input = controlsButtons.querySelector("input");
 const createButton = controlsButtons.querySelector("[data-create]");
 const destroyButton = controlsButtons.querySelector("[data-destroy]");
 const boxContainer = document.querySelector("#boxes");
+controlsButtons.classList.add("controls-container");
+createButton.classList.add("create-button");
+destroyButton.classList.add("destroy-button");
+boxContainer.classList.add("boxes-container");
 
 createButton.addEventListener("click", () => onValidateNumber(createBoxes));
 
