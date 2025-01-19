@@ -1,0 +1,10 @@
+.login-form > label {
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-email-input {
+  margin-bottom: 8px;
+}

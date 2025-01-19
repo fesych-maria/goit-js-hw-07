@@ -1,4 +1,7 @@
 const form = document.querySelector(".login-form");
+const firstInput = document.querySelector("input");
+firstInput.classList.add("user-email-input");
+
 form.addEventListener("submit", onFormSubmit);
 function onFormSubmit(e) {
   e.preventDefault();
