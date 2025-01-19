@@ -25,7 +25,8 @@ function onValidateNumber(callback) {
 }
 
 function createBox(size, fontSize) {
-  return `<div class="box" style="background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px;"><span class="box-text" style="font-size: ${fontSize}px;">${getRandomHexColor()}</span></div>`;
+  const randomColor = getRandomHexColor();
+  return `<div class="box" style="background-color: ${randomColor}; width: ${size}px; height: ${size}px;"><span class="box-text" style="font-size: ${fontSize}px;">${randomColor}</span></div>`;
 }
 
 function createBoxes(amount) {
