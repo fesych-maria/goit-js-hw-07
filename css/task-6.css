@@ -38,3 +38,9 @@
 .destroy-button:active {
   background-color: #ff7070;
 }
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

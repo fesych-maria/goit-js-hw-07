@@ -24,15 +24,16 @@ function onValidateNumber(callback) {
   input.value = "";
 }
 
-function createBox(size) {
-  return `<div class="box" style="background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px;"></div>`;
+function createBox(size, fontSize) {
+  return `<div class="box" style="background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px;"><span class="box-text" style="font-size: ${fontSize}px;">${getRandomHexColor()}</span></div>`;
 }
 
 function createBoxes(amount) {
   const boxes = [];
   for (let i = 0; i < amount; i++) {
     let size = 30 + i * 10;
-    boxes.push(createBox(size));
+    let fontSize = 6 + i * 2;
+    boxes.push(createBox(size, fontSize));
   }
   const boxesArr = boxes.join("");
   boxContainer.innerHTML = boxesArr;
