@@ -26,7 +26,7 @@ function onValidateNumber(callback) {
 
 function createBox(size, fontSize) {
   const randomColor = getRandomHexColor();
-  return `<div class="box" style="background-color: ${randomColor}; width: ${size}px; height: ${size}px;"><span class="box-text" style="font-size: ${fontSize}px;">${randomColor}</span></div>`;
+  return `<div class="box" style="background-color: ${randomColor}; width: ${size}px; height: ${size}px;"><span style="font-size: ${fontSize}px;">${randomColor}</span></div>`;
 }
 
 function createBoxes(amount) {
@@ -36,8 +36,7 @@ function createBoxes(amount) {
     let fontSize = 6 + i * 2;
     boxes.push(createBox(size, fontSize));
   }
-  const boxesArr = boxes.join("");
-  boxContainer.innerHTML = boxesArr;
+  boxContainer.innerHTML = boxes.join("");
 }
 
 destroyButton.addEventListener("click", onDestroyButton);
